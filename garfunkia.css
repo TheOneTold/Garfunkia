@@ -1,0 +1,31 @@
+body{
+	background-color:#ccb3ff;
+	
+}
+.website-header{
+	text-align:center;
+	display:block;
+}
+.website-header h4{
+	margin-top:0;
+}
+.website-header h1{
+	margin-bottom:.25rem;
+}
+div{
+	text-align:center;
+}
+.center{
+	text-align:center;
+}
+p{
+	text-align:center;
+}
+nav a{
+	margin-right:10px;
+}
+footer{
+	position:absolute;
+	bottom:0;
+	width:99%;
+}

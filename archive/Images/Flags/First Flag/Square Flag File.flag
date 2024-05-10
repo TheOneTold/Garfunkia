@@ -1,0 +1,27 @@
+name=Untitled
+ratio=1:1
+gridSize=1:1
+
+type=bends forward
+color1=333333
+color2=6299ab
+
+type=star
+Color=333333
+X=0.76
+Y=0.68
+Size=0.44
+Rotation=0
+Stroke=0
+StrokeColor=000000
+StrokeCurved=false
+
+type=crown
+Color=6299ab
+X=0.31
+Y=0.28
+Size=0.44
+Rotation=0
+Stroke=0
+StrokeColor=000000
+StrokeCurved=false
