@@ -1,0 +1,32 @@
+body{
+	background-color:#ccb3ff;
+	
+}
+
+
+
+div{
+	text-align:center;
+}
+p{
+	text-align:center;
+}
+nav a{
+	margin-right:10px;
+}
+footer{
+	position:relative;
+	top:18vh;
+	padding-bottom:2vh;
+	width:100%;
+}
+.video {
+	width:32em;
+	height:24em;
+	max-width:80vw;
+	max-height:60vw;
+}
+.GTVLOGO img{
+	width:12em;
+	max-width:50vw;
+}
