@@ -1,0 +1,66 @@
+body{
+	background-color:#ccb3ff;
+	
+}
+
+.text {
+	text-align:left;
+	width:70vw;
+	margin-left:auto;
+	margin-right:auto;
+	line-height: 2 ;
+}
+.text p {
+	text-align:left;
+}
+.textheader {
+	text-align:center;
+}
+.textheader h2 {
+	margin-bottom:.5rem;
+}
+.textheader h4 {
+	margin-top:.5rem;
+}
+div{
+	text-align:center;
+}
+p{
+	text-align:center;
+}
+#notfunny {
+	width:15em;
+	max-width:50vw;
+}
+nav a{
+	margin-right:10px;
+}
+footer{
+	position:relative;
+	top:18vh;
+	padding-bottom:2vh;
+	width:100%;
+	clear:left;
+}
+.flag {
+	margin:2vw;
+	float:left;
+}
+.flag img {
+	width:12em;
+	max-width:40vw;
+}
+
+#flags {
+	text-align:center;
+}
+.clear {
+	clear:left;
+}
+.GALOGO img{
+	width:15em;
+	max-width:50vw;
+}
+.misc {
+	width:80vw;
+}
