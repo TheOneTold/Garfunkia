@@ -2,6 +2,10 @@ body{
 	background-color:#ccb3ff;
 	
 }
+#logo {
+	width:15em;
+	max-width:50vw;
+}
 .website-header{
 	text-align:center;
 	display:block;
@@ -21,11 +25,16 @@ div{
 p{
 	text-align:center;
 }
+.paragraph {
+	padding-left:15vw;
+	padding-right:15vw;
+}
 nav a{
 	margin-right:10px;
 }
 footer{
-	position:absolute;
-	bottom:0;
-	width:99%;
+	position:relative;
+	top:18vh;
+	padding-bottom:2vh;
+	width:100%;
 }
