@@ -15,9 +15,10 @@ nav a{
 	margin-right:10px;
 }
 footer{
-	position:absolute;
-	bottom:0;
-	width:99%;
+	position:relative;
+	top:18vh;
+	padding-bottom:2vh;
+	width:100%;
 }
 .newsTitle{
 	text-align:center;
