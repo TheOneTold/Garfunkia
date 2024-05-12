@@ -271,7 +271,6 @@ if (month == "R" && day == 16 && leapYear(currentYear) == true){
 
 var g = document.getElementById("garfunkiaAudio"); 
 g.volume = 0.5;
-document.getElementById("titlecc").style.width = "auto";
 
 // Functions for flag clicks.
 
