@@ -1,5 +1,5 @@
 body{
-	background-color:#ccb3ff;
+	background-color:#c995e9;
 	
 }
 
@@ -12,7 +12,18 @@ p{
 	text-align:center;
 }
 nav a{
-	margin-right:10px;
+	margin-right:.5rem;
+	color:white;
+	text-decoration:none;
+	padding:.5rem;
+}
+nav {
+	background-color:#57147b;
+	padding:.75rem;
+	padding-left:4rem;
+	border-radius:2rem;
+	margin-bottom:1rem;
+	
 }
 footer{
 	position:relative;
