@@ -2,7 +2,9 @@ body{
 	background-color:#ccb3ff;
 	
 }
-
+.center{
+	text-align:center;
+}
 .text {
 	text-align:left;
 	width:70vw;
@@ -47,8 +49,8 @@ footer{
 	float:left;
 }
 .flag img {
-	width:12em;
-	max-width:40vw;
+	width:18em;
+	max-width:30vw;
 }
 
 #flags {
@@ -63,4 +65,13 @@ footer{
 }
 .misc {
 	width:80vw;
+}
+
+#garfunkian-calendar {
+	width:60em;
+	max-width:95vw;
+}
+#p1 {
+	margin:0;
+	margin-bottom:1rem;
 }

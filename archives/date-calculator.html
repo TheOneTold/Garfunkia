@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Date Calculator - Garfunkia</title>
+		<link rel="stylesheet" href="archives.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="The greatest site on the web is back. More to come shortly.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<nav>
+			<a href="http://www.garfunkia.org/">Home</a>
+			<a href="http://www.garfunkia.org/news">News</a>
+			<a href="http://www.garfunkia.org/tv">TV</a>
+			<a href="http://www.garfunkia.org/archives">Archives</a>
+		</nav>
+		<div><a class="GALOGO" href="http://www.garfunkia.org/archives"><img src="images/archives.bmp"/></a></div>
+		<hr>
+		<h2 class="center">Garfunkian Date Calculator</h2>
+		<p id="p1"></p>
+		<center>
+		<h4>Gregorian Date to Garfunkian Date</h4>
+		<form id="datecalc">
+			<label for="fmonth">Month:</label>
+			<input min="1" max="12" step="1" type="number" id="fmonth" name="fmonth">
+			<label for="fday">Day:</label>
+			<input min="1" max="31" step="1" type="number" id="fday" name="fday">
+			<label for="fyear">Year:</label>
+			<input step="1" type="number" id="fyear" name="fyear">
+			<input type="button" value="Calculate" onclick="calculateSubmit()"></input>
+		</form>
+		</center>
+		<p id="p2"></p>
+		<hr>
+		<center>
+		<h4>Garfunkian Date to Gregorian Date</h4>
+		<form id="datecalc">
+			<label for="fmonth">Garfunkian Date:</label>
+			<input type="text" id="fdate" name="fdate">
+			<input type="button" value="Calculate" onclick="calculateSubmit2()"></input>
+		</form>
+		<p id="p3"></p>
+		</center>
+		<script type="text/javascript" src="datecalc.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+	<footer>
+	<hr>
+	<p>All content on Garfunkia.org is public domain.</p>
+	</footer>
+</html>
