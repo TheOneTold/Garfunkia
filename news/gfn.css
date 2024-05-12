@@ -14,6 +14,7 @@ nav a{
 }
 footer{
 	position:relative;
+	text-align:center;
 	top:18vh;
 	padding-bottom:2vh;
 	width:100%;
@@ -45,8 +46,8 @@ footer{
 	margin-left:20%;
 	margin-right:20%;
 	line-height:2;
-	padding-left: 22px ;
-	text-indent: -22px ;
+	padding-left: 2.75rem ;
+	text-indent: -2.75rem ;
 }
 blockquote{
 	text-indent: 0;
