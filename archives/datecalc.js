@@ -49,6 +49,11 @@ if(isInt(zYear) == false){
     return false;
 }
 
+if(zYear == 0){
+	alert("0 is not a valid year. Use -1 for 1BC, or 1 for 1AD.");
+    return false;
+}
+
 // Nonesense that tells you days since a date. //
 function parseDate(str) {
 	var mdy = str.split('/');
