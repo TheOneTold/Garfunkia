@@ -147,6 +147,7 @@ function calculateSubmit2() {
 	
 	var gMonth;
 	var gDay;
+	var gYear;
 	
 	// Finds Gregorian month and day
 	
@@ -217,48 +218,49 @@ function calculateSubmit2() {
 	
 	if (xMonth == "R" && xDay < 12 ) {
 		gMonth = 3;
-		gDay = xDay + 21;
+		// Changed this from 19 to 20. Hopefully this works.
+		gDay = xDay + 20;
 	}
 	if (xMonth == "R" && xDay > 11 ) {
 		gMonth = 4;
-		gDay = xDay - 11;
+		// Changed this from 11 to 12.
+		gDay = xDay - 12;
 	}
-	
 		//Finds Gregorian year
 	
 	if (xGY == "GY" && gMonth > 4 || xGY == "GY" && gMonth ==4 && gDay > 4) {
-		var gYear =xYear+2018;
+		gYear =xYear+2018;
 	}
 	if (xGY == "GY" && gMonth < 4 || xGY == "GY" && gMonth ==4 && gDay < 5) {
-		var gYear =xYear+2019;
+		gYear =xYear+2019;
 	}
 	if (xGY == "BGY" && gMonth > 4 || xGY == "BGY" && gMonth ==4 && gDay > 4) {
-		var gYear =2018 - xYear;
+		gYear =2018 - xYear;
 	}
 	if (xGY == "BGY" && gMonth < 4 || xGY == "BGY" && gMonth ==4 && gDay < 5) {
-		var gYear =2019 - xYear;
+		gYear =2019 - xYear;
 	}
 	if (gYear == 0) {
-		var gYear = 1 + "BC";
+		gYear = 1 + "BC";
 	}
 	if (gYear < 0) {
-		var gYear = Math.abs(gYear) + 1 + "BC";
+		gYear = Math.abs(gYear) + 1 + "BC";
 	}
 	
 	
 	//Leap year nonsense
 	if (leapYear(gYear) && xYear > 0){
 		if (xMonth == "C" && xDay > 22 && xDay < 52 ) {
-		gMonth = 2;
-		gDay = xDay - 22;
+			gMonth = 2;
+			gDay = xDay - 22;
 		}
 		if (xMonth == "C" && xDay > 51 ) {
-		gMonth = 3;
-		gDay = xDay - 51;
+			gMonth = 3;
+			gDay = xDay - 51;
 		}
 		if (xMonth == "R" && xDay < 13 ) {
-		gMonth = 3;
-		gDay = xDay + 19;
+			gMonth = 3;
+			gDay = xDay + 19;
 		}
 		if (xMonth == "R" && xDay > 12 ) {
 			gMonth = 4;
@@ -273,16 +275,16 @@ function calculateSubmit2() {
 	var pYear = parseInt(gYear);
 	if (leapYear(pYear) && xYear < 1){
 		if (xMonth == "C" && xDay > 22 && xDay < 52 ) {
-		gMonth = 2;
-		gDay = xDay - 22;
+			gMonth = 2;
+			gDay = xDay - 22;
 		}
 		if (xMonth == "C" && xDay > 51 ) {
-		gMonth = 3;
-		gDay = xDay - 51;
+			gMonth = 3;
+			gDay = xDay - 51;
 		}
 		if (xMonth == "R" && xDay < 13 ) {
-		gMonth = 3;
-		gDay = xDay + 19;
+			gMonth = 3;
+			gDay = xDay + 19;
 		}
 		if (xMonth == "R" && xDay > 12 ) {
 			gMonth = 4;
@@ -290,7 +292,7 @@ function calculateSubmit2() {
 		}
 		if (xMonth == "R" && xDay == 16) {
 			gDay=4;
-			var gYear =xYear+2020;
+			gYear =xYear+2020;
 		}
 		if (xMonth == "R" && xDay == 15) {
 			gDay=3;
