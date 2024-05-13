@@ -1,3 +1,13 @@
+function isInt(value) {
+	return !isNaN(value) && 
+	parseInt(Number(value)) == value && 
+	!isNaN(parseInt(value, 10));
+}
+function leapYear(year)
+{
+  return ((year % 4 == 0) && (year % 100 !== 0)) || (year % 400 == 0);
+}
+	
 function calculateSubmit() {
 	var fmonth = document.getElementById("fmonth").value;
 	var fday = document.getElementById("fday").value;
@@ -9,6 +19,35 @@ var zDay = fday;
 var zHour = 12;
 var month;
 var day;
+
+if(zMonth < 0 || zDay < 0){
+	alert("Month and Day cannot be negative.");
+	return false;
+}
+
+if(isInt(zMonth) == false || isInt(zDay) == false || isInt(zYear) == false){
+	alert("Month, day, and year must be valid integers.");
+    return false;
+}
+
+if(zMonth > 11){
+	alert("Month cannot be greater than 12.");
+    return false;
+}
+
+if((zMonth == 3 || zMonth == 5 || zMonth == 8 || zMonth == 10) && zDay > 30){
+	alert("Day cannot be greater than 30.");
+    return false;
+}
+if((zMonth == 1 && zDay > 28 && leapYear(zYear) == false) || (zMonth == 1 && zDay > 29 && leapYear(zYear) == true) ){
+	alert("Day cannot be greater than 30.");
+    return false;
+}
+
+if(isInt(zYear) == false){
+	alert("Year must be a number. Do not include A.D. or B.C. Use negative numbers to represent B.C. years.");
+    return false;
+}
 
 // Nonesense that tells you days since a date. //
 function parseDate(str) {
@@ -130,6 +169,11 @@ function calculateSubmit2() {
 	var xMonth = xMonthDay.slice(0,1)
 	var xDay = parseInt(xMonthDay.slice(1,))
 	
+	if(xDate == null || xMonthDay == null || xGyear == null || xMonth == null || xDay == null){
+		alert("Incorrect format. Please use the MD-Y format.");
+		return false;
+	}
+	
 	var xGY = xGyear.replace(/\d/g,'')
 	if (xGY !== "GYε" && xGY !== "GYe") {
 		var xYear = parseInt(xGyear.replace( /^\D+/g, ''));
@@ -139,15 +183,18 @@ function calculateSubmit2() {
 		
 	}
 	
-	
-	function leapYear(year)
-	{
-	  return ((year % 4 == 0) && (year % 100 !== 0)) || (year % 400 == 0);
-	}
-	
 	var gMonth;
 	var gDay;
 	var gYear;
+	
+	if(isInt(xDay) == false || isInt(xYear) == false){
+		alert("Day and year must be numbers. Please use the MD-Y format. ");
+		return false;
+	}
+	if(xGY !== "GYe" && xGY !== "GYε" && xGY !== "GY" && xGY !== "BGY"){
+		alert("Incorrect year format. Please use GY or BGY.");
+		return false;
+	}
 	
 	// Finds Gregorian month and day
 	
@@ -224,7 +271,7 @@ function calculateSubmit2() {
 	if (xMonth == "R" && xDay > 11 ) {
 		gMonth = 4;
 		// Changed this from 11 to 12.
-		gDay = xDay - 12;
+		gDay = xDay - 11;
 	}
 		//Finds Gregorian year
 	
@@ -247,6 +294,11 @@ function calculateSubmit2() {
 		gYear = Math.abs(gYear) + 1 + "BC";
 	}
 	
+	if (xMonth == "R" && xDay > 15) {
+		gMonth = 4;
+		gDay=4;
+		gYear = gYear + 1
+	}
 	
 	//Leap year nonsense
 	if (leapYear(gYear) && xYear > 0){
@@ -266,7 +318,7 @@ function calculateSubmit2() {
 			gMonth = 4;
 			gDay = xDay - 12;
 		}
-		if (xMonth == "R" && xDay == 16) {
+		if (xMonth == "R" && xDay > 15) {
 			gDay=4;
 			
 		}
