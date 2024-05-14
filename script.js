@@ -108,16 +108,16 @@ document.getElementById("p1").innerHTML = month + day + "-BGY" + Math.abs(year);
 if (month == "G" && day == 1){
 	document.getElementById("titleimage").src="holiday/garfunkelday.png";
 }
+if (month == "G" && day == 5){
+	document.getElementById("titleimage").src="holiday/laws.png";
+}
 if (month == "G" && day == 6){
 	document.getElementById("titleimage").src="holiday/garfunkiaindependence.png";
 }
-if (month == "G" && day == 16){
-	document.getElementById("titleimage").src="holiday/racism.png";
+if (month == "G" && day == 31){
+	document.getElementById("titleimage").src="holiday/summer.png";
 }
 if (month == "G" && day == 55){
-	document.getElementById("titleimage").src="holiday/jesse.png";
-}
-if (month == "G" && day == 59){
 	document.getElementById("titleimage").src="holiday/jesse.png";
 }
 if (month == "L" && day == 8){
@@ -132,9 +132,6 @@ if (month == "L" && day == 36){
 if (month == "L" && day == 50){
 	document.getElementById("titleimage").src="holiday/aidan.png";
 }
-if (month == "L" && day == 56){
-	document.getElementById("titleimage").src="holiday/andrew.png";
-}
 if (month == "L" && day == 59){
 	document.getElementById("titleimage").src="holiday/terry.png";
 }
@@ -143,9 +140,6 @@ if (month == "L" && day == 63){
 }
 if (month == "L" && day == 68){
 	document.getElementById("titleimage").src="holiday/afghan.png";
-}
-if (month == "P" && day == 20){
-	document.getElementById("titleimage").src="holiday/911.png";
 }
 if (month == "P" && day == 26){
 	document.getElementById("titleimage").src="holiday/curiousgeorge.png";
@@ -157,33 +151,6 @@ if (month == "L" && day == 55){
 	document.getElementById("titleimage").src="holiday/fall.png";
 }
 if (month == "P" && day == 41){
-	document.getElementById("titleimage").src="holiday/pawwah.png";
-}
-if (month == "P" && day == 42){
-	document.getElementById("titleimage").src="holiday/pawwah.png";
-}
-if (month == "P" && day == 43){
-	document.getElementById("titleimage").src="holiday/pawwah.png";
-}
-if (month == "P" && day == 44){
-	document.getElementById("titleimage").src="holiday/pawwah.png";
-}
-if (month == "P" && day == 45){
-	document.getElementById("titleimage").src="holiday/pawwah.png";
-}
-if (month == "P" && day == 46){
-	document.getElementById("titleimage").src="holiday/pawwah.png";
-}
-if (month == "P" && day == 47){
-	document.getElementById("titleimage").src="holiday/pawwah.png";
-}
-if (month == "P" && day == 48){
-	document.getElementById("titleimage").src="holiday/pawwah.png";
-}
-if (month == "P" && day == 49){
-	document.getElementById("titleimage").src="holiday/pawwah.png";
-}
-if (month == "P" && day == 50){
 	document.getElementById("titleimage").src="holiday/pawwah.png";
 }
 if (month == "P" && day == 65){
@@ -199,7 +166,7 @@ if (month == "D" && day == 20){
 	document.getElementById("titleimage").src="holiday/brony.png";
 }
 if (month == "D" && day == 20){
-	document.getElementById("titleimage").src="holiday/superdonkeykong2.png";
+	document.getElementById("titleimage").src="holiday/donkeykongcountry2.png";
 }
 if (month == "D" && day == 28){
 	document.getElementById("titleimage").src="holiday/zach.png";
@@ -230,12 +197,6 @@ if (month == "C" && day == 1){
 if (month == "C" && day == 20){
 	document.getElementById("titleimage").src="holiday/kansas.png";
 }
-if (month == "C" && day == 21){
-	document.getElementById("titleimage").src="holiday/quick.png";
-}
-if (month == "C" && day == 30){
-	document.getElementById("titleimage").src="holiday/misa.png";
-}
 if (month == "C" && day == 33){
 	document.getElementById("titleimage").src="holiday/alex.png";
 }
@@ -245,7 +206,7 @@ if (month == "C" && day == 37){
 if (month == "C" && day == 40){
 	document.getElementById("titleimage").src="holiday/chad.png";
 }
-if (month == "C" && day == 62){
+if (month == "C" && day == 63){
 	document.getElementById("titleimage").src="holiday/scatman.png";
 }
 if (month == "C" && day == 67){
@@ -257,7 +218,7 @@ if (month == "C" && day == 26){
 if (month == "R" && day == 1){
 	// first day of repentence
 }
-if (month == "R" && day == 11){
+if (month == "R" && day == 13){
 	document.getElementById("titleimage").src="holiday/yahoo.png";
 }
 if (month == "R" && day == 15 && leapYear(currentYear) ==! true){
