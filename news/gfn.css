@@ -118,10 +118,19 @@ blockquote{
 }
 @media screen and (max-width: 400px) {
 	.newsArticle img{
-		width:15em;
-		max-width:85%;
+		width:25em;
+		max-width:95%;
 		display:block;
 		margin-right:auto;
 		margin-left:auto;
 	}
+	.source{
+		padding-left: 1em;
+		text-indent: -1em;
+		width:175px;
+	}
+	blockquote{
+		margin-left:1em;
+		width:175px;
+	}		
 }
