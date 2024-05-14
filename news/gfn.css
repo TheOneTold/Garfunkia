@@ -1,6 +1,6 @@
 body{
-	background-color:#be80e5;
-	
+	background-color:#ccb3ff;
+	margin:0;
 }
 
 
@@ -8,38 +8,73 @@ body{
 div{
 	text-align:center;
 }
-
 nav a{
-	margin-right:.5rem;
-	color:white;
 	text-decoration:none;
-	padding:.5rem;
+	color:black;
+	padding-right:1em;
+	padding-left:1em;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	text-align:center;
+}
+nav a:hover{
+	color:white;
+}
+.navelement {
+	padding-top:.5em;
+	padding-bottom:.5em;
+	border-style:none solid none none;
+	border-width:1px;
+	border-color:gray;
+	height:100%;
+	display:inline;
 }
 nav {
-	background-color:#57147b;
-	padding:.75rem;
-	padding-left:4rem;
-	border-radius:2rem;
-	margin-bottom:1rem;
-	
+	padding-left:2em;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	margin-bottom:1em;
+	background-color:#aa80ff;
+}
+@media screen and (max-width: 400px) {
+	nav a{
+		padding-right:4px;
+		padding-left:4px;
+		padding-top:4px;
+		padding-bottom:4px;
+		text-align:center;
+	}
+	.navelement {
+		padding-top:4px;
+		padding-bottom:4px;
+		height:100%;
+		display:inline;
+	}
+	nav {
+		padding-left:4px;
+		padding-top:4px;
+		padding-bottom:4px;
+		margin-bottom:4px;
+		background-color:#aa80ff;
+	}
 }
 footer{
 	position:relative;
 	text-align:center;
-	top:18vh;
-	padding-bottom:2vh;
+	top:18%;
+	padding-bottom:.5em;
 	width:100%;
 }
 .newsTitle{
 	text-align:center;
-	margin-bottom:.5rem;
+	margin-bottom:.5em;
 }
 .newsTitle h2{
-	margin-bottom:.25rem;
+	margin-bottom:.25em;
 }
 .newsTitle h4{
 	margin-top:0;
-	margin-bottom:.25rem;
+	margin-bottom:.25em;
 }
 .newsTitle h5{
 	margin-top:0;
@@ -47,23 +82,23 @@ footer{
 }
 .newsArticle{
 	text-align:left;
-	max-width:85vw;
-	width:38rem;
+	width:38em;
+	max-width:80%;
 	margin-left:auto;
 	margin-right:auto;
 	line-height:2;
-	text-indent: 2.75rem;
+	text-indent: 2.75em;
 }
 .source{
-	padding-left: 2.75rem ;
+	padding-left: 2.75em;
 	word-break: break-all;
-	text-indent: -2.75rem ;
+	text-indent: -2.75em;
 }
 blockquote{
 	text-indent: 0;
 }
 .newsLink h3{
-	margin-bottom:.25rem;
+	margin-bottom:.25em;
 }
 .newsLink h5{
 	margin:0;
@@ -73,11 +108,20 @@ blockquote{
 }
 .GFNLOGO img{
 	width:30em;
-	max-width:50vw;
+	max-width:75%;
 }
 .newsArticle img{
 	width:15em;
-	max-width:85vw;
+	max-width:85%;
 	float:left;
 	margin-right:2em;
+}
+@media screen and (max-width: 400px) {
+	.newsArticle img{
+		width:15em;
+		max-width:85%;
+		display:block;
+		margin-right:auto;
+		margin-left:auto;
+	}
 }

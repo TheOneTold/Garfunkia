@@ -1,10 +1,10 @@
 body{
-	background-color:#be80e5;
-	
+	background-color:#ccb3ff;
+	margin:0;
 }
 #logo {
-	width:15em;
-	max-width:50vw;
+	width:12em;
+	max-width:50%;
 }
 .website-header{
 	text-align:center;
@@ -14,7 +14,7 @@ body{
 	margin-top:0;
 }
 .website-header h1{
-	margin-bottom:.25rem;
+	margin-bottom:.25em;
 }
 div{
 	text-align:center;
@@ -26,33 +26,74 @@ p{
 	text-align:center;
 }
 .paragraph {
-	padding-left:15vw;
-	padding-right:15vw;
+	margin-right:auto;
+	margin-left:auto;
+	width:40em;
+	max-width:80%;
+	margin-left:auto;
+	margin-right:auto;
 }
 nav a{
-	margin-right:.5rem;
-	color:white;
 	text-decoration:none;
-	padding:.5rem;
+	color:black;
+	padding-right:1em;
+	padding-left:1em;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	text-align:center;
+}
+nav a:hover{
+	color:white;
+}
+.navelement {
+	padding-top:.5em;
+	padding-bottom:.5em;
+	border-style:none solid none none;
+	border-width:1px;
+	border-color:gray;
+	height:100%;
+	display:inline;
 }
 nav {
-	background-color:#57147b;
-	padding:.75rem;
-	padding-left:4rem;
-	border-radius:2rem;
-	margin-bottom:1rem;
-	
+	padding-left:2em;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	margin-bottom:1em;
+	background-color:#aa80ff;
+}
+@media screen and (max-width: 400px) {
+	nav a{
+		padding-right:4px;
+		padding-left:4px;
+		padding-top:4px;
+		padding-bottom:4px;
+		text-align:center;
+	}
+	.navelement {
+		padding-top:4px;
+		padding-bottom:4px;
+		height:100%;
+		display:inline;
+	}
+	nav {
+		padding-left:4px;
+		padding-top:4px;
+		padding-bottom:4px;
+		margin-bottom:4px;
+		background-color:#aa80ff;
+	}
 }
 footer{
 	position:relative;
-	top:18vh;
-	padding-bottom:2vh;
+	text-align:center;
+	top:18%;
+	padding-bottom:.5em;
 	width:100%;
 }
 #p1 {
 	margin:0;
 	font-weight:bold;
-	margin-bottom:1rem;
+	margin-bottom:1em;
 }
 h4 {
 	margin:0;

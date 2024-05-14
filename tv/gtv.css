@@ -1,6 +1,6 @@
 body{
-	background-color:#be80e5;
-	
+	background-color:#ccb3ff;
+	margin:0;
 }
 
 
@@ -12,32 +12,73 @@ p{
 	text-align:center;
 }
 nav a{
-	margin-right:.5rem;
-	color:white;
 	text-decoration:none;
-	padding:.5rem;
+	color:black;
+	padding-right:1em;
+	padding-left:1em;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	text-align:center;
+}
+nav a:hover{
+	color:white;
+}
+.navelement {
+	padding-top:.5em;
+	padding-bottom:.5em;
+	border-style:none solid none none;
+	border-width:1px;
+	border-color:gray;
+	height:100%;
+	display:inline;
 }
 nav {
-	background-color:#57147b;
-	padding:.75rem;
-	padding-left:4rem;
-	border-radius:2rem;
-	margin-bottom:1rem;
-	
+	padding-left:2em;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	margin-bottom:1em;
+	background-color:#aa80ff;
+}
+@media screen and (max-width: 400px) {
+	nav a{
+		padding-right:4px;
+		padding-left:4px;
+		padding-top:4px;
+		padding-bottom:4px;
+		text-align:center;
+	}
+	.navelement {
+		padding-top:4px;
+		padding-bottom:4px;
+		height:100%;
+		display:inline;
+	}
+	nav {
+		padding-left:4px;
+		padding-top:4px;
+		padding-bottom:4px;
+		margin-bottom:4px;
+		background-color:#aa80ff;
+	}
 }
 footer{
 	position:relative;
-	top:18vh;
-	padding-bottom:2vh;
+	text-align:center;
+	top:18%;
+	padding-bottom:.5em;
 	width:100%;
 }
 .video {
 	width:32em;
 	height:24em;
-	max-width:80vw;
-	max-height:60vw;
+}
+@media screen and (max-width: 400px) {
+	.video {
+		width:200px;
+		height:150px;
+	}
 }
 .GTVLOGO img{
 	width:12em;
-	max-width:50vw;
+	max-width:50%;
 }

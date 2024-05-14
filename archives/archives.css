@@ -1,14 +1,14 @@
 body{
-	background-color:#be80e5;
-	
+	background-color:#ccb3ff;
+	margin:0;
 }
 .center{
 	text-align:center;
 }
 .text {
 	text-align:left;
-	max-width:85vw;
-	width:38rem;
+	width:38em;
+	max-width:80%;
 	margin-left:auto;
 	margin-right:auto;
 	line-height: 2;
@@ -20,10 +20,10 @@ body{
 	text-align:center;
 }
 .textheader h2 {
-	margin-bottom:.5rem;
+	margin-bottom:.5em;
 }
 .textheader h4 {
-	margin-top:.5rem;
+	margin-top:.5em;
 }
 div{
 	text-align:center;
@@ -33,36 +33,74 @@ p{
 }
 #notfunny {
 	width:15em;
-	max-width:50vw;
+	max-width:75%;
 }
 nav a{
-	margin-right:.5rem;
-	color:white;
 	text-decoration:none;
-	padding:.5rem;
+	color:black;
+	padding-right:1em;
+	padding-left:1em;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	text-align:center;
+}
+nav a:hover{
+	color:white;
+}
+.navelement {
+	padding-top:.5em;
+	padding-bottom:.5em;
+	border-style:none solid none none;
+	border-width:1px;
+	border-color:gray;
+	height:100%;
+	display:inline;
 }
 nav {
-	background-color:#57147b;
-	padding:.75rem;
-	padding-left:4rem;
-	border-radius:2rem;
-	margin-bottom:1rem;
-	
+	padding-left:2em;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	margin-bottom:1em;
+	background-color:#aa80ff;
+}
+@media screen and (max-width: 400px) {
+	nav a{
+		padding-right:4px;
+		padding-left:4px;
+		padding-top:4px;
+		padding-bottom:4px;
+		text-align:center;
+	}
+	.navelement {
+		padding-top:4px;
+		padding-bottom:4px;
+		height:100%;
+		display:inline;
+	}
+	nav {
+		padding-left:4px;
+		padding-top:4px;
+		padding-bottom:4px;
+		margin-bottom:4px;
+		background-color:#aa80ff;
+	}
 }
 footer{
 	position:relative;
-	top:18vh;
-	padding-bottom:2vh;
+	text-align:center;
+	top:18%;
+	padding-bottom:.5em;
 	width:100%;
 	clear:left;
 }
 .flag {
-	margin:2vw;
+	margin:.5em;
 	float:left;
+	width:12em;
+	max-width:40%;
 }
 .flag img {
-	width:18em;
-	max-width:30vw;
+	width:100%;
 }
 
 #flags {
@@ -73,17 +111,18 @@ footer{
 }
 .GALOGO img{
 	width:15em;
-	max-width:50vw;
+	max-width:75%;
 }
 .misc {
-	width:80vw;
+	width:60em;
+	max-width:95%;
 }
 
 #garfunkian-calendar {
 	width:60em;
-	max-width:95vw;
+	max-width:95%;
 }
 #p1 {
 	margin:0;
-	margin-bottom:1rem;
+	margin-bottom:1em;
 }
