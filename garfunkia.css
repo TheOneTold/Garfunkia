@@ -98,3 +98,10 @@ footer{
 h4 {
 	margin:0;
 }
+.website-badge {
+	display:inline;
+	vertical-align: top;
+}
+.website-badge a {
+	text-decoration:none;
+}
