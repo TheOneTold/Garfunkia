@@ -168,9 +168,6 @@ if (month == "D" && day == 20){
 if (month == "D" && day == 20){
 	document.getElementById("logo").src="holiday/donkeykongcountry2.png";
 }
-if (month == "D" && day == 28){
-	document.getElementById("logo").src="holiday/zach.png";
-}
 if (month == "D" && day == 36){
 	document.getElementById("logo").src="holiday/brony.png";
 }
