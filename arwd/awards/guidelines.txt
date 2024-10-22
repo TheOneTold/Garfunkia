@@ -1,0 +1,28 @@
+Criteria:
+
+No cookies or restricted cookies.
+	Restricted cookies: 
+		Must be clearly mentioned in privacy policy: Stat counter, cloudflare, keeping user logged in, remebering user preferences. Disabling cookies must not impact user experience.
+No advertisements or restricted advertisements.
+	Restricted ads:
+		Static (No videos, no animations, no audio.)
+			Video ads are allowed before interactive content such as videos and games. Video ad must be either less than thirty seconds long or skippable after at most ten seconds.
+		Must be clearly identified with text beside the ad labeling it as an "advertisement"
+		Must be appropriate and non-fraudulent.
+			No porn ads. No ads for clearly fraudulent products. No ads featuring copyrighted material clearly not owned by the advertizer. No ads that are likely to decieve the user into clicking (Fake download buttons.)
+		Acceptable static ad sizes:
+			Skyscraper (120/160 * 600)
+			Banner (468 * 60)
+			Square (250 * 250)
+		Do not block content from user for using an ad blocker extension.
+			A notice asking the user to disable their ad block extension is permitted but it must be contained in the space where the advertisement would have gone.
+
+No Java script or restricted Java script.
+	Restricted Java script:
+		Any java scripts used by the site must only be used for interactive/dynamic site content (chat rooms, games).
+		There should not be an unreasonable amount of scripts running on a page. 
+			Pages limited to one script per interactive/dynamic element.
+			
+Absolutely no tracking requests.
+
+Layout:
