@@ -162,10 +162,7 @@ if (month == "D" && day == 15){
 if (month == "D" && day == 17){
 	document.getElementById("logo").src="holiday/doug.png";
 }
-if (month == "D" && day == 20){
-	document.getElementById("logo").src="holiday/brony.png";
-}
-if (month == "D" && day == 20){
+if (month == "D" && day == 21){
 	document.getElementById("logo").src="holiday/donkeykongcountry2.png";
 }
 if (month == "D" && day == 36){
