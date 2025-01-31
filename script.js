@@ -188,9 +188,6 @@ if (month == "D" && day == 70){
 if (month == "C" && day == 1){
 	document.getElementById("logo").src="holiday/tintin.png";
 }
-if (month == "C" && day == 20){
-	document.getElementById("logo").src="holiday/kansas.png";
-}
 if (month == "C" && day == 33){
 	document.getElementById("logo").src="holiday/alex.png";
 }
